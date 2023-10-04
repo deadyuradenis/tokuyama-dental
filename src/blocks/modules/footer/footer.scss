@@ -1,0 +1,122 @@
+.footer {
+    background-color: #F7F7F7;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        padding: 56px 0 48px;
+
+        @media only screen and (max-width: $bp-md){
+            // flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
+
+
+    &__socials-link {
+        display: flex;
+        align-items: center;
+        font-family: "Raleway";
+        font-weight: 500;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 160%;
+        font-weight: 500;
+        color: #0C131D;
+        fill: $dark-gray;
+        transition: fill 0.25s ease;
+        margin: 16px 8px;
+        flex: 0 1 25%;
+        justify-content: center;
+
+        &:first-of-type{
+            justify-content: flex-start;
+            margin-left: auto;
+             @media only screen and (max-width: $bp-md){
+                margin-left: 0;
+            }
+        }
+
+        &:last-of-type{
+            justify-content: flex-end;
+            margin-right: auto;
+
+             @media only screen and (max-width: $bp-md){
+                margin-right: 0;
+                justify-content: flex-start;
+            }
+            
+        }
+
+        @media only screen and (max-width: $bp-md){
+            flex: 0 1 50%;
+            justify-content: flex-start;
+            margin: 16px 0;
+        }
+        
+        @media only screen and (max-width: $bp-sm){
+            flex: 0 1 100%;
+        }
+
+        .icon{
+            width: 40px;
+            height: 40px;
+            flex: 0 0 auto;
+            margin-right: 16px;
+            fill: inherit;
+        }
+        
+        &--vk:hover {
+            fill: #0077FF;
+        }
+        
+        &--youtube:hover {
+            fill: #FC0D1B;
+        }
+
+        &--facebook:hover {
+            fill: #166FE5;
+        }
+    }
+
+    &__links {
+        border-top: 1px solid #E0E0E0;
+        width: 100%;
+        padding: 32px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        @media only screen and (max-width: $bp-md){
+			flex-direction: column;
+            align-items: start;
+            padding: 20px 0;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        font-family: "OpenSans";
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 135%;
+        color: #828282;
+        transition: color 0.25s ease;
+
+        @media only screen and (max-width: $bp-md){
+            margin: 12px 0;
+        }
+
+        &:hover{
+            color: $dark;
+        }
+    }
+}
+

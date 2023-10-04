@@ -1,0 +1,117 @@
+.section-questions {
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+
+        @media only screen and (max-width: $bp-xl){
+			flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    &__left {
+        width: 392px;
+        margin-right: 128px;
+        flex: 0 0 auto;
+
+        @media only screen and (max-width: $bp-xl){
+			margin: 0 0 48px;
+            width: 100%;
+        }
+    }
+
+    &__left-title {
+        margin-bottom: 40px;
+
+        @media only screen and (max-width: $bp-xl){
+			margin-bottom: 32px;
+        }
+    }
+
+    &__left-text {
+        color: $gray;
+        margin-bottom: 18px;
+
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+
+    &__main {
+        width: 100%;
+    }
+
+    &__item {
+        margin-bottom: 8px;
+        color: $dark-gray;
+
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+
+    &__item-header {
+        cursor: pointer;
+        padding: 16px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #D4D4D4;
+    }
+
+    &__item-title {
+
+        @media only screen and (max-width: $bp-sm){
+            font-size: 18px;   
+        }
+    }
+    
+    &__item.is-open &__item-icon{
+        transform: rotate(-180deg);
+    }
+
+    &__item-header:hover &__item-icon{
+        fill: $red;
+    }
+
+    &__item-icon {
+        fill: $dark-gray;
+        width: 32px;
+        height: 32px;
+        flex: 0 0 auto;
+        margin-left: 16px;
+        transition: fill 0.25s ease, transform 0.35s ease;
+
+        @media only screen and (max-width: $bp-sm){
+            margin-left: 45px;
+        }
+    }
+
+    &__body {
+        padding: 32px 40px 40px;
+        display: none;
+
+        @media only screen and (max-width: $bp-md){
+            padding: 32px 0 40px;
+        }
+
+        .text{
+            margin-bottom: 18px;
+        }
+
+        .list{
+            margin-bottom: 24px;
+            padding-left: 24px;
+            margin-top: 24px;
+
+            &:first-child{
+                margin-top: 0;
+            }
+        }
+
+        &>*:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

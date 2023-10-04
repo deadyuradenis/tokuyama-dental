@@ -1,0 +1,204 @@
+.section-intro {
+    padding-top: 60px;
+    position: relative;
+
+    @media only screen and (max-width: $bp-xl){
+		padding-top: 65px;
+    }
+    
+    @media only screen and (max-width: $bp-lg){
+        padding-top: 85px;
+    }
+    
+    @media only screen and (max-width: $bp-md){
+        padding-top: 0;
+    }
+
+    &__inner {
+        position: relative;
+        padding-top: 30px;
+        min-height: 658px;
+
+        @media only screen and (max-width: $bp-xl){
+			padding-top: 60px;
+            min-height: 580px;
+        }
+        
+        @media only screen and (max-width: $bp-lg){
+            padding-top: 10px;
+        }
+        
+        @media only screen and (max-width: $bp-md){
+            padding-top: 95px;
+        }
+        
+        @media only screen and (max-width: $bp-sm){
+            padding-top: 80px;
+        }
+    }
+
+    &__slider {
+
+        
+        .slider {
+            overflow: visible;
+
+            &__item{
+                opacity: 0;
+                transition: opacity 0.75s ease;
+
+                &.swiper-slide-active{
+                    opacity: 1;
+                }
+            }
+
+            &__navigation {
+                position: absolute;
+                margin-top: 96px;
+                bottom: 0;
+                left: 0;
+                z-index: 1;
+
+                @media only screen and (max-width: $bp-xl){
+                    margin-top: 80px;
+                    position: relative;
+                }
+                
+                @media only screen and (max-width: $bp-lg){
+                    margin-top: 96px;
+                }
+                
+                @media only screen and (max-width: $bp-md){
+                    margin-top: 64px;
+                    width: 100%;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+
+    &__item{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item-main{
+        width: 600px;
+        padding-bottom: 52px;
+
+        @media only screen and (max-width: $bp-xl){
+			width: calc(50% - 16px);
+            padding-bottom: 0;
+        }
+        
+        @media only screen and (max-width: $bp-lg){
+            width: 50%;
+        }
+        
+        @media only screen and (max-width: $bp-md){
+            width: 100%;
+        }
+    }
+
+    &__item-image{
+        width: 645px;
+        margin-left: 105px;
+        margin-right: -125px;
+
+        @media only screen and (max-width: $bp-xl){
+			width: calc(50% - 16px);
+            margin: 0;
+        }
+        
+        @media only screen and (max-width: $bp-lg){
+            width: calc(50% - 12px);
+        }
+        
+        @media only screen and (max-width: $bp-md){
+            display: none;
+        }
+
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__item-title {
+        margin-bottom: 32px;
+
+        @media only screen and (max-width: $bp-sm){
+            margin-bottom: 24px;
+        }
+    }
+
+    &__item-text {
+        margin-bottom: 16px;
+
+        @media only screen and (max-width: $bp-lg){
+			font-size: 18px;
+        }
+
+        &:last-of-type{
+            margin-bottom: 56px;
+
+            @media only screen and (max-width: $bp-sm){
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    &__buttons{
+        margin-top: 56px;
+
+        @media only screen and (max-width: $bp-sm){
+            margin-top: 40px;
+        }
+    }
+
+    &__button {
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 0.03em;
+        padding: 0 30px;
+
+        @media only screen and (max-width: $bp-md){
+            width: 100%;
+        }
+
+        @media only screen and (max-width: $bp-sm){
+            font-size: 16px;
+            letter-spacing: 0;
+        }
+    }
+
+    &__bg {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        width: 978px;
+        max-width: 1200px;
+        object-fit: contain;
+        opacity: 0.15;
+        transform: translate(-10px, 60px);
+
+        @media only screen and (max-width: $bp-xl){
+            width: 575px;
+            transform: translate(0px, 65px);
+        }
+        
+        @media only screen and (max-width: $bp-lg){
+            width: 575px;
+            transform: translate(225px, 75px);
+        }
+        
+        @media only screen and (max-width: $bp-md){
+            opacity: 0.08;
+            width: 100%;
+            transform: translate(0, 5px);
+        }
+    }
+
+}

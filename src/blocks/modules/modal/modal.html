@@ -1,0 +1,136 @@
+		<div class="modal fade" id="modal-info" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg class="icon modal-close-icon">
+							<use xlink:href="img/sprites/sprite.svg#close-usage"></use>
+						</svg>
+					</button>
+					<div class="h3 modal__title">
+						Информация об акциях
+					</div>
+					<div class="text modal__text">
+						Условия начисления: при накоплении одним участником акции 60 баллов. 
+					</div>
+					<div class="text modal__text">
+						Призы начисляются случайным образом. Период начисления призов: с 01.03.2021 по 31.10.2021. Сроки вручения призов: с 01.03.2021 по 30.04.2022. Начисление призов указывается в личном кабинете участника акции. Для получения приза участник должен указать в личном кабинете контактные данные и адрес доставки. 
+					</div>
+					<div class="text modal__text">
+						Призы начисляются случайным образом. Период начисления призов: с 01.03.2021 по 31.10.2021. Сроки вручения призов: с 01.03.2021 по 30.04.2022. Начисление призов указывается в личном кабинете участника акции. Для получения приза участник должен указать в личном кабинете контактные данные и адрес доставки.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal--sm fade" id="modal-login" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg class="icon modal-close-icon">
+							<use xlink:href="img/sprites/sprite.svg#close-usage"></use>
+						</svg>
+					</button>
+					<div class="h3 modal__title">
+						Введите номер телефона
+					</div>
+					<div class="text modal__text">
+						Придет SMS с кодом для подтверждения
+					</div>
+					<div class="modal__form jsForm">
+						<form action="#">
+							<div class="input input--inverted input--phone modal__form-input">
+								<input type="tel" class="input__field jsInput jsPhoneMask jsInputReq" name="phone" placeholder="Номер телефона">	
+							</div>
+							<button type="submit" class="button button--md modal__form-button jsFormSubmitButton">
+								<span class="button__text">
+									Получить SMS
+								</span>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal-promo modal--lg fade" id="modal-promo" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg class="icon modal-close-icon">
+							<use xlink:href="img/sprites/sprite.svg#close-usage"></use>
+						</svg>
+					</button>
+					<div class="h3 modal__title">
+						Ввод промокода 
+					</div>
+					<div class="modal-promo__slider">
+						<div class="swiper slider jsModalPromoSlider">
+							<div class="swiper-wrapper slider__wrapper">
+								<div class="swiper-slide slider__item">
+									<img src="img/products/promo-1.png" alt="product" class="modal-promo__slide-img">
+								</div>
+								<div class="swiper-slide slider__item">
+									<img src="img/products/promo-1.png" alt="product" class="modal-promo__slide-img">
+								</div>
+								<div class="swiper-slide slider__item">
+									<img src="img/products/promo-1.png" alt="product" class="modal-promo__slide-img">
+								</div>
+							</div>
+							<div class="slider__navigation">
+								<div class="swiper-button-prev slider__button slider__button--prev">
+									<svg class="icon slider__button-icon">
+										<use xlink:href="img/sprites/sprite.svg#arrow-usage"></use>
+									</svg>
+								</div>
+								<div class="swiper-pagination slider__dots"></div>
+								<div class="swiper-button-next slider__button slider__button--next">
+									<svg class="icon slider__button-icon">
+										<use xlink:href="img/sprites/sprite.svg#arrow-usage"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-promo__content">
+						<div class="text modal__text">
+							На упаковке найдите стикер с надписью «Акция». Снимите верхний слой стикера, поддёв за его правую часть с надписью «Открыть здесь». Промокод расположен на втором слое.
+						</div>
+						<div class="modal__form jsForm">
+							<form action="#">
+								<div class="input input--inverted modal__form-input">
+									<input type="text" class="input__field jsInput jsInputReq" name="promocode" placeholder="Введите промокод">	
+								</div>
+								<div class="input input--inverted input--phone modal__form-input">
+									<input type="tel" class="input__field jsInput jsPhoneMask jsInputReq" name="phone" placeholder="Номер телефона">	
+								</div>
+								<button type="submit" class="button button--md modal__form-button jsFormSubmitButton">
+									<span class="button__text">
+										Зарегистрировать
+									</span>
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal--md fade" id="modal-promo-thanks" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg class="icon modal-close-icon">
+							<use xlink:href="img/sprites/sprite.svg#close-usage"></use>
+						</svg>
+					</button>
+					<div class="h3 modal__title">
+						Промокод зарегистрирован
+					</div>
+					<div class="text modal__text">
+						Статус акции и промокода , а также получить приз и оформить доставку можно  в личном кабинете
+					</div>
+					<a href="#" class="button button--md modal__button">
+						<span class="button__text">
+							Перейти в личный кабинет
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>

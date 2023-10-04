@@ -1,0 +1,23 @@
+.list {
+    display: block;
+    column-count: 2;
+    column-gap: 48px;
+    margin-bottom: -8px;
+    list-style-type: disc;
+
+    @media only screen and (max-width: $bp-md){
+		column-count: 1;
+    }
+    
+    @media only screen and (max-width: $bp-sm){
+        
+    }
+
+    &__item {
+      margin-bottom: 8px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 29px;
+    }
+    
+}

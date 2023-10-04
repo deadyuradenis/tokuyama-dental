@@ -1,0 +1,45 @@
+.header {
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    @media only screen and (max-width: $bp-md){
+        padding-top: 30px;
+    }
+
+    @media only screen and (max-width: $bp-sm){
+        padding-bottom: 10px;
+    }
+    
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo-block {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        height: 48px;
+        display: flex;
+        object-fit: contain;
+    }
+
+    &__logo-slogan {
+        font-size: 16px;
+        line-height: 120%;
+        color: #AEAEAE;
+        margin-left: 32px;
+    }
+
+    &__button {
+        font-size: 16px;
+
+        @media only screen and (max-width: $bp-sm){
+            height: 38px;
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.button {
+	cursor: pointer;
+	box-sizing: border-box;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 48px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 24px;
+	color: #fff;
+	background-color: $dark;
+	border: 1px solid $dark;
+	padding: 0 24px;
+	transition: background-color 0.25s ease, color 0.25s ease 0.15s, border-color 0.25s ease, transform 0.35s ease;
+
+	&__text {
+		color: inherit;
+	}
+
+	&:hover {
+		background-color: #fff;
+		color: $dark;
+	}
+
+	&--sm{
+		height: 40px;
+	}
+
+	&--md{
+		height: 64px;
+		padding: 0 32px;
+	}
+
+	&--lg{
+		height: 75px;
+		padding: 0 32px;
+	}
+
+	&--inverted{
+		background-color: #fff;
+		color: $dark;
+
+		&:hover{
+			background-color: $dark;
+			color: #fff;
+		}
+	}
+
+	&--border{
+		border-color: #fff;
+	}
+
+	&--inverted &--border{
+		border-color: $dark;
+	}
+}
+

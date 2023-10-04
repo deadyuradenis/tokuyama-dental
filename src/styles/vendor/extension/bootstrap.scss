@@ -1,0 +1,43 @@
+@import "../../../../node_modules/bootstrap/scss/functions";
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 480px,
+	md: 768px,
+	lg: 1024px,
+	xl: 1440px,
+	xxl: 1920px
+);
+
+$container-max-widths: (
+	sm: 100%,
+	md: 100%,
+	lg: 100%,
+	xl: 1288px
+);
+
+
+// $modal-inner-padding: 30px;
+// $modal-footer-margin-between: 30px;
+// $modal-header-padding: 15px 15px;
+
+
+$grid-gutter-width: 30px;
+
+
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../../../../node_modules/bootstrap/scss/modal";
+
+.container{
+	padding: 0 32px;
+
+	@media only screen and (max-width: $bp-lg){
+		padding: 0 24px;
+	}
+	
+	@media only screen and (max-width: $bp-md){
+		padding: 0 16px;
+	}
+}

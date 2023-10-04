@@ -1,0 +1,41 @@
+//colors
+
+$green: #43A96E;
+$green-light: #90CAA8;
+
+
+$dark: #000;
+$dark-gray: #282828;
+
+$orange: #F77044;
+
+$gray: #646464;
+$gray-light: #ECECEC;
+$gray-thin: #E5E5E5;
+
+$red: #D70B28;
+
+// breakpoints
+
+$bp-sm: 479px;
+$bp-md: 767px;
+$bp-lg: 1023px;
+$bp-xl: 1439px;
+$bp-xxl: 1919px;
+
+
+@media only screen and (max-width: $bp-xl){
+    
+}
+
+@media only screen and (max-width: $bp-lg){
+
+}
+
+@media only screen and (max-width: $bp-md){
+    
+}
+
+@media only screen and (max-width: $bp-sm){
+	
+}

@@ -1,0 +1,135 @@
+.input{
+    height: 48px;
+    position: relative;
+    box-sizing: content-box;
+
+    
+    &__field{
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        min-width: 0;
+        max-width: none;
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.03em;
+        padding: 0 24px;
+        transition: border-color 0.25s ease;
+
+        &::placeholder{
+            color: inherit;
+        }
+    }
+
+
+        
+    .iti{
+        height: 100%;
+        width: 100%;
+        display: block;
+
+        &__arrow{
+            display: flex;
+            border: none;
+            width: 12px;
+            height: 12px;
+            flex-shrink: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 4.5L6 7.5L9 4.5' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+            transition: transform 0.35s ease;
+
+            &--up{
+                transform: rotate(-180deg);
+            }
+        }
+
+
+        &__flag-container{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            transition: border-color 0.25s ease, background-color 0.25s ease;
+        }
+
+        &__selected-flag{
+            box-sizing: border-box;
+            width: 100%;
+            width: 72px;
+            border-right: 1px solid #E0E0E0;
+            background-color: transparent;
+            justify-content: center;
+            transition: border-color 0.25s ease, background-color 0.25s ease;
+        }
+
+        &__country-list{
+            width: 100%;
+            top: 100%;
+            left: 1px;
+            max-height: 180px;
+            overflow-y: auto;
+            scrollbar-color: #A9A9A9 transparent;
+            scrollbar-width: thin;
+            box-shadow: 0px 12px 25px rgba(19, 51, 80, 0.08);
+            border-radius: 0px 0px 2px 2px;
+            border: 1px solid #F2F2F2;
+
+            &::-webkit-scrollbar {
+                height: 2px;
+                width: 2px;
+                border-radius: 2px;
+            }
+        
+            &::-webkit-scrollbar-track {
+                background-color: transparent;
+            }
+        
+            &::-webkit-scrollbar-thumb {
+                background-color: #A9A9A9;
+            }
+        }
+        
+        &__country{
+            padding: 12px 16px;
+            font-size: 14px;
+            line-height: 21px;
+            transition: background-color 0.35s ease;
+        }
+
+        &__flag-box{
+            margin-right: 16px;
+        }
+
+        &__highlight{
+            background-color: #F6F6F6;
+        }
+    }
+    
+
+    &--inverted &__field{
+        border-color: $dark;
+        color: $dark;
+    }
+    
+    &--inverted .iti__selected-flag{
+        border-color: $dark;
+    }
+
+    &.is-error &__field{
+        border-color: $red;
+    }
+
+    &.is-error .iti__selected-flag{
+        border-color: $red;
+    }
+
+    &--phone &__field{
+        padding-left: 88px !important;
+    }
+
+    &--phone &__label{
+        left: 88px;
+    }
+    
+}

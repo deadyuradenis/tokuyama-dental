@@ -1,0 +1,184 @@
+.section-registration {
+    position: relative;
+    overflow: hidden;
+
+    @media only screen and (max-width: $bp-md){
+        overflow: visible;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        
+        @media only screen and (max-width: $bp-lg){
+            margin: 0 -24px;
+            padding-top: 296px;
+        }
+        
+        @media only screen and (max-width: $bp-md){
+            padding-top: 270px;
+        }
+        
+        @media only screen and (max-width: $bp-sm){
+            padding-top: 200px;
+        }
+
+        &::before{
+            content: "";
+            width: 100%;
+            // max-width: 1920px;
+            background-color: $red;
+            border-radius: 50%;
+            aspect-ratio: 1;
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            transform: translate(-50%, 140px);
+
+            @media only screen and (max-width: $bp-xl){
+                transform: translate(-50%, 180px);
+                min-width: 1080px;
+            }
+            
+            @media only screen and (max-width: $bp-lg){
+                transform: translate(-50%, 100px);
+                min-width: auto;
+                width: calc(100% - 130px);
+            }
+            
+            @media only screen and (max-width: $bp-md){
+                transform: translate(-50%, 175px);
+                width: calc(100% - 100px);
+            }
+            
+            @media only screen and (max-width: $bp-sm){
+                transform: translate(-50%, 130px);
+            }
+        }
+    }
+
+    &__img {
+        display: block;
+        object-fit: contain;
+        height: 100%;
+        max-height: 600px;
+        position: absolute;
+        bottom: 40px;
+        opacity: 0.15;
+
+        @media only screen and (max-width: $bp-xl){
+            height: 540px;
+            bottom: 60px;
+        }
+        
+        @media only screen and (max-width: $bp-lg){
+            height: 270px;
+            bottom: auto;
+            top: 10px;
+        }
+        
+        @media only screen and (max-width: $bp-md){
+            max-height: 250px;
+            height: auto;
+            max-width: calc(50% - 20px);
+            opacity: 0.25;
+        }
+        
+        @media only screen and (max-width: $bp-sm){
+            
+        }
+
+        &--left {
+            right: calc(50% + 420px);
+
+            @media only screen and (max-width: $bp-xl){
+                left: 30px;
+                right: auto;
+            }
+            
+            @media only screen and (max-width: $bp-lg){
+                left: 10px;
+            }
+        }
+
+        &--right {
+            left: calc(50% + 420px);   
+
+            @media only screen and (max-width: $bp-xl){
+                right: 30px;
+                left: auto;
+            }
+            
+            @media only screen and (max-width: $bp-lg){
+                right: 10px;
+            }
+        }
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 808px;
+        padding: 128px 160px;
+        text-align: center;
+        background-color: #242128;
+        position: relative;
+        z-index: 1;
+
+        @media only screen and (max-width: $bp-xl){
+            max-width: 528px;
+            padding: 128px 64px;
+        }
+        
+        @media only screen and (max-width: $bp-lg){
+            padding: 128px 88px;
+            width: 100%;
+            max-width: none;
+        }
+        
+        @media only screen and (max-width: $bp-md){
+            padding: 128px 64px;
+        }
+        
+        @media only screen and (max-width: $bp-sm){
+            padding: 64px 40px;
+            box-sizing: content-box;
+        }
+    }
+
+    &__title {
+        margin-bottom: 32px;
+        color: #fff;
+    }
+
+    &__subtitle {
+        margin-bottom: 64px;
+        color: #fff;
+        max-width: 380px;
+
+        @media only screen and (max-width: $bp-xl){
+            max-width: none;
+        }
+    }
+
+    &__form {
+        width: 345px;
+
+        @media only screen and (max-width: $bp-sm){
+            width: 100%;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    &__button {
+        font-size: 18px;
+        width: 100%;
+    }
+}
+

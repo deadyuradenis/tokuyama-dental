@@ -1,0 +1,247 @@
+.section-prizes {
+    background-color: #F7F7F7;
+
+		&__inner {
+            display: flex;
+            justify-content: center;
+            margin: 0 -32px;
+
+            @media only screen and (max-width: $bp-xl){
+                margin: 0;
+                flex-direction: column;
+            }
+		}
+
+		&__left {
+            width: calc(50% - 196px);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            background-color: #242128;
+
+            @media only screen and (max-width: $bp-xl){
+                width: 100%;
+                position: relative;
+            }
+		}
+
+        &__left &__container{
+            @media only screen and (min-width: 1440px){
+                margin: 0;
+                padding: 0;
+                max-width: none;
+            }
+        }
+
+		&__left-inner {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            position: relative;
+            
+            &::before{
+                content: "";
+                width: auto;
+                height: calc(100% - 430px);
+                aspect-ratio: 1;
+                background-color: #D70B28;
+                border-radius: 50%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translateX(-50%);
+
+                @media only screen and (max-width: $bp-xl){
+                    height: 100%;
+                    transform: translate(-50%, 0);
+                }
+                
+                @media only screen and (max-width: $bp-md){
+                    transform: translate(-50%, 0);
+                }
+            }
+
+            @media only screen and (max-width: $bp-xl){
+                position: static;
+            }
+            
+            @media only screen and (max-width: $bp-md){
+                overflow: visible;
+            }
+		}
+
+		&__left-main {
+            width: 100%;
+            max-width: 416px;
+            padding: 90px 32px 90px 0;
+            position: relative;
+            z-index: 1;
+
+            @media only screen and (max-width: $bp-xl){
+                max-width: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 86px 0;
+                text-align: center;
+            }
+
+            @media only screen and (max-width: $bp-md){
+                padding: 98px 0;
+            }
+            
+            @media only screen and (max-width: $bp-sm){
+                padding: 72px 0;
+            }
+		}
+
+		&__left-uppertitle {
+            font-size: 24px;
+            line-height: 130%;
+            color: #BDBDBD;
+            margin-bottom: 8px;
+		}
+
+		&__left-title {
+            color: #fff;
+            margin-bottom: 48px;
+
+            @media only screen and (max-width: $bp-lg){
+                font-size: 40px;
+            }
+
+            @media only screen and (max-width: $bp-md){
+                margin-bottom: 24px;
+            }
+		}
+
+		&__button {
+            font-size: 18px;
+            background-color: transparent;
+		}
+
+        &__left-decor {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            height: 430px;
+		}
+
+		&__right {
+            width: calc(50% + 196px);
+            padding: 90px 0px 90px 100px;
+
+            @media only screen and (max-width: $bp-xl){
+                width: 100%;
+                padding: 90px 0;
+                min-height: 880px;
+            }
+            
+            @media only screen and (max-width: $bp-md){
+                padding: 80px 0;
+            }
+            
+            @media only screen and (max-width: $bp-sm){
+                padding: 80px 0 40px;
+            }
+		}
+
+        &__right &__container{
+          
+            @media only screen and (min-width: 1440px){
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        &__right-inner{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 705px;
+            height: 100%;
+
+            @media only screen and (max-width: $bp-xl){
+                max-width: none;
+            }
+        }
+
+        &__slider-title {
+            max-width: 490px;
+            height: max-content;
+    
+            @media only screen and (max-width: $bp-lg){
+                font-size: 32px;
+            }
+		}
+
+		&__slider {
+            order: 1;
+            width: 150%;
+            flex: 1 0 auto;
+            margin-top: 68px;
+
+            @media only screen and (max-width: $bp-xl){
+                width: 100%;
+                margin-top: 56px;
+                overflow: visible;
+            }
+  
+            @media only screen and (max-width: $bp-md){
+                order: 0;
+                margin-top: 22px;
+            }
+
+            .slider__item {
+                height: auto;
+
+                @media only screen and (max-width: $bp-xl){
+                    width: 35%;
+                }
+
+                @media only screen and (max-width: $bp-lg){
+                    width: 50%;
+                }
+                
+                @media only screen and (max-width: $bp-md){
+                    width: 75%;
+                }
+            }
+		}
+
+		&__product {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 24px;
+            box-sizing: border-box;
+            background-color: #fff;
+            text-decoration: none;
+            color: $dark;
+		}
+
+		&__product-img {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            margin-bottom: 40px;
+
+        }
+
+		&__product-title {
+            font-size: 18px;
+            line-height: 29px;
+		}
+
+		&__slider-navigation {
+            order: 0;
+            height: 52px;
+
+            @media only screen and (max-width: $bp-md){
+                margin-top: 16px;
+                width: 100%;
+                justify-content: space-between;
+            }
+		}
+}
